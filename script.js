@@ -1508,6 +1508,7 @@ function generateColor () {
     c.b *= 0.15;
     return c;
 }
+}
 
 //let c = HSVtoRGB(Math.random(), 1.0, 1.0);
     //c.r *= 0.15;
