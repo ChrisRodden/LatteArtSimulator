@@ -164,7 +164,7 @@ function startGUI () {
     //gui.add(config, 'CURL', 0, 50).name('vorticity').step(1);
     gui.add(config, 'SPLAT_RADIUS', 0.01, 1.0).name('splat radius');
     //gui.add(config, 'SHADING').name('shading').onFinishChange(updateKeywords);
-    //gui.add(config, 'COLORFUL').name('colorful');
+    gui.add(config, 'COLORFUL').name('colorful');
     //gui.add(config, 'PAUSED').name('paused').listen();
 
     gui.add({ fun: () => {
