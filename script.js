@@ -198,7 +198,7 @@ function startGUI () {
             let instagram = gui.add({ fun : () => {
         ga('send', 'event', 'link button', 'instagram');
         window.open('https://instagram.com/omra.coffee/');
-    } }, 'fun').name('Follow us on Instagram');
+    } }, 'fun').name('Instagram');
     instagram.__li.className = 'cr function bigFont';
     instagram.__li.style.borderLeft = '3px solid #8C8C8C';
     let instagramIcon = document.createElement('span');
@@ -208,7 +208,7 @@ function startGUI () {
             let linkedin = gui.add({ fun : () => {
         ga('send', 'event', 'link button', 'linkedin');
         window.open('https://linkedin.com/company/omra-coffee-ltd');
-    } }, 'fun').name('Follow us on Linkedin');
+    } }, 'fun').name('Linkedin');
     linkedin.__li.className = 'cr function bigFont';
     linkedin.__li.style.borderLeft = '3px solid #8C8C8C';
     let linkedinIcon = document.createElement('span');
@@ -218,7 +218,7 @@ function startGUI () {
             let facebook = gui.add({ fun : () => {
         ga('send', 'event', 'link button', 'facebook');
         window.open('https://linkedin.com/company/omra-coffee-ltd');
-    } }, 'fun').name('Follow us on Facebook');
+    } }, 'fun').name('Facebook');
     facebook.__li.className = 'cr function bigFont';
     facebook.__li.style.borderLeft = '3px solid #8C8C8C';
     let facebookIcon = document.createElement('span');
