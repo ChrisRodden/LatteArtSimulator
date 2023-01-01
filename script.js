@@ -10,7 +10,7 @@ let config = {
     DYE_RESOLUTION: 1024,
     CAPTURE_RESOLUTION: 1024,
     DENSITY_DISSIPATION: 2.0,
-    VELOCITY_DISSIPATION: 2.0,
+    VELOCITY_DISSIPATION: 4.0,
     PRESSURE: 0.5,
     PRESSURE_ITERATIONS: 20,
     CURL: 0,
@@ -159,7 +159,7 @@ function startGUI () {
     //gui.add(config, 'DYE_RESOLUTION', { 'high': 1024, 'medium': 512, 'low': 256, 'very low': 128 }).name('quality').onFinishChange(initFramebuffers);
     //gui.add(config, 'SIM_RESOLUTION', { '32': 32, '64': 64, '128': 128, '256': 256 }).name('sim resolution').onFinishChange(initFramebuffers);
     gui.add(config, 'DENSITY_DISSIPATION', 0, 4.0).name('Fade Speed');
-    gui.add(config, 'VELOCITY_DISSIPATION', 0, 4.0).name('Consistency');
+    gui.add(config, 'VELOCITY_DISSIPATION', 0, 8.0).name('Consistency');
     //gui.add(config, 'PRESSURE', 0.0, 1.0).name('pressure');
     //gui.add(config, 'CURL', 0, 50).name('vorticity').step(1);
     gui.add(config, 'SPLAT_RADIUS', 0.01, 1.0).name('Flow Rate');
