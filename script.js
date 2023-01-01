@@ -227,8 +227,8 @@ function startGUI () {
     twitterIcon.className = 'icon twitter';
     
 
-    if (isMobile())
-        gui.close();
+    //if (isMobile())
+        //gui.close();
 }
 
 function isMobile () {
