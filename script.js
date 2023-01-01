@@ -17,7 +17,7 @@ let config = {
     SPLAT_RADIUS: 0.05,
     SPLAT_FORCE: 6000,
     SHADING: true,
-    COLORFUL: true,
+    COLORFUL: false,
     COLOR_UPDATE_SPEED: 10,
     PAUSED: false,
     BACK_COLOR: { r: 0, g: 0, b: 0 },
@@ -185,7 +185,7 @@ function startGUI () {
     captureFolder.add(config, 'TRANSPARENT').name('transparent');
     captureFolder.add({ fun: captureScreenshot }, 'fun').name('take screenshot');
 
-    let twitter = gui.add({ fun : () => {
+            let twitter = gui.add({ fun : () => {
         ga('send', 'event', 'link button', 'twitter');
         window.open('https://twitter.com/OmraCoffee');
     } }, 'fun').name('Twitter');
@@ -195,15 +195,35 @@ function startGUI () {
     twitter.domElement.parentElement.appendChild(twitterIcon);
     twitterIcon.className = 'icon twitter';
     
-        let instagram = gui.add({ fun : () => {
+            let instagram = gui.add({ fun : () => {
         ga('send', 'event', 'link button', 'instagram');
         window.open('https://instagram.com/omra.coffee/');
-    } }, 'fun').name('Instagram');
-    twitter.__li.className = 'cr function bigFont';
-    twitter.__li.style.borderLeft = '3px solid #8C8C8C';
+    } }, 'fun').name('Follow us on Instagram');
+    instagram.__li.className = 'cr function bigFont';
+    instagram.__li.style.borderLeft = '3px solid #8C8C8C';
     let instagramIcon = document.createElement('span');
     instagram.domElement.parentElement.appendChild(instagramIcon);
     instagramIcon.className = 'icon instagram';
+    
+            let linkedin = gui.add({ fun : () => {
+        ga('send', 'event', 'link button', 'linkedin');
+        window.open('https://linkedin.com/company/omra-coffee-ltd');
+    } }, 'fun').name('Follow us on Linkedin');
+    linkedin.__li.className = 'cr function bigFont';
+    linkedin.__li.style.borderLeft = '3px solid #8C8C8C';
+    let linkedinIcon = document.createElement('span');
+    linkedin.domElement.parentElement.appendChild(linkedinIcon);
+    linkedinIcon.className = 'icon linkedin';
+    
+            let facebook = gui.add({ fun : () => {
+        ga('send', 'event', 'link button', 'facebook');
+        window.open('https://linkedin.com/company/omra-coffee-ltd');
+    } }, 'fun').name('Follow us on Facebook');
+    facebook.__li.className = 'cr function bigFont';
+    facebook.__li.style.borderLeft = '3px solid #8C8C8C';
+    let facebookIcon = document.createElement('span');
+    facebook.domElement.parentElement.appendChild(facebookIcon);
+    facebookIcon.className = 'icon facebook';
 
     if (isMobile())
         gui.close();
