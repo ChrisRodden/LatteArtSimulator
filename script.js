@@ -6,7 +6,7 @@ const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
 
 let config = {
-    SIM_RESOLUTION: 64,
+    SIM_RESOLUTION: 32,
     DYE_RESOLUTION: 1024,
     CAPTURE_RESOLUTION: 512,
     DENSITY_DISSIPATION: 0.2,
@@ -15,7 +15,7 @@ let config = {
     PRESSURE_ITERATIONS: 20,
     CURL: 0,
     SPLAT_RADIUS: 0.05,
-    SPLAT_FORCE: 6000,
+    SPLAT_FORCE: 8000,
     SHADING: true,
     COLORFUL: false,
     COLOR_UPDATE_SPEED: 10,
