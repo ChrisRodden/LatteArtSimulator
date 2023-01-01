@@ -168,8 +168,8 @@ function startGUI () {
     //gui.add(config, 'PAUSED').name('paused').listen();
 
     gui.add({ fun: () => {
-        splatStack.push(parseInt(Math.random() * 20) + 5);
-    } }, 'fun').name('Random splats');
+        splatStack.push(parseInt(Math.random() * 20) + 2);
+    } }, 'fun').name('Random Pours');
 
     //let bloomFolder = gui.addFolder('Bloom');
     //bloomFolder.add(config, 'BLOOM').name('enabled').onFinishChange(updateKeywords);
