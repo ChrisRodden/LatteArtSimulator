@@ -206,25 +206,25 @@ function startGUI () {
     linkedin.domElement.parentElement.appendChild(linkedinIcon);
     linkedinIcon.className = 'icon linkedin';
     
-            let facebook = gui.add({ fun : () => {
-        ga('send', 'event', 'link button', 'facebook');
-        window.open('https://linkedin.com/company/omra-coffee-ltd');
-    } }, 'fun').name('Facebook');
-    facebook.__li.className = 'cr function bigFont';
-    facebook.__li.style.borderLeft = '3px solid #8C8C8C';
-    let facebookIcon = document.createElement('span');
-    facebook.domElement.parentElement.appendChild(facebookIcon);
-    facebookIcon.className = 'icon facebook';
+//            let facebook = gui.add({ fun : () => {
+//        ga('send', 'event', 'link button', 'facebook');
+//        window.open('https://linkedin.com/company/omra-coffee-ltd');
+//    } }, 'fun').name('Facebook');
+//    facebook.__li.className = 'cr function bigFont';
+//    facebook.__li.style.borderLeft = '3px solid #8C8C8C';
+//    let facebookIcon = document.createElement('span');
+//    facebook.domElement.parentElement.appendChild(facebookIcon);
+//    facebookIcon.className = 'icon facebook';
     
-            let twitter = gui.add({ fun : () => {
-        ga('send', 'event', 'link button', 'twitter');
-        window.open('https://twitter.com/OmraCoffee');
-    } }, 'fun').name('Twitter');
-    twitter.__li.className = 'cr function bigFont';
-    twitter.__li.style.borderLeft = '3px solid #8C8C8C';
-    let twitterIcon = document.createElement('span');
-    twitter.domElement.parentElement.appendChild(twitterIcon);
-    twitterIcon.className = 'icon twitter';
+//            let twitter = gui.add({ fun : () => {
+//        ga('send', 'event', 'link button', 'twitter');
+//        window.open('https://twitter.com/OmraCoffee');
+//    } }, 'fun').name('Twitter');
+//    twitter.__li.className = 'cr function bigFont';
+//    twitter.__li.style.borderLeft = '3px solid #8C8C8C';
+//    let twitterIcon = document.createElement('span');
+//    twitter.domElement.parentElement.appendChild(twitterIcon);
+//    twitterIcon.className = 'icon twitter';
     
 
     //if (isMobile())
