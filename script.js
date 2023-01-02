@@ -14,7 +14,7 @@ let config = {
     PRESSURE: 0.5,
     PRESSURE_ITERATIONS: 20,
     CURL: 0,
-    SPLAT_RADIUS: 0.5,
+    SPLAT_RADIUS: 0.2,
     SPLAT_FORCE: 8000,
     SHADING: true,
     COLORFUL: false,
