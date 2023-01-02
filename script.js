@@ -198,7 +198,7 @@ function startGUI () {
     
             let linkedin = gui.add({ fun : () => {
         ga('send', 'event', 'link button', 'linkedin');
-        window.open('https://linkedin.com/company/omra-coffee-ltd');
+        window.open('https://www.linkedin.com/company/%C3%B3mra-coffee-ltd/');
     } }, 'fun').name('Linkedin');
     linkedin.__li.className = 'cr function bigFont';
     linkedin.__li.style.borderLeft = '3px solid #8C8C8C';
